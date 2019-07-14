@@ -1,6 +1,7 @@
 package com.airport.app;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import java.util.*;
 
 public class AirportTests
 {
@@ -25,9 +26,8 @@ public class AirportTests
     @Test
     public void landsPlaneAndStoresIt() {
       airport.land("plane");
-      String actual = airport.getPlane();
-      assertEquals("plane", actual);
-
+      List<String> actual = airport.getPlane();
+      assertEquals(Arrays.asList("plane"), actual);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class AirportTests
     {
       airport.land("plane");
       airport.takeOff("plane");
-      String actual = airport.getPlane();
-      assertEquals("", actual);
+      List<String> actual = airport.getPlane();
+      assertEquals(Arrays.asList(), actual);
     }
 }

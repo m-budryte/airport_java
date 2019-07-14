@@ -1,23 +1,23 @@
 package com.airport.app;
-
+import java.util.*;
 public class Airport
 {
-    String plane;
+    List<String> planes;
 
     public Airport(){
-      plane = "";
+      planes = new ArrayList<String>();
     }
     public boolean land(String landed_plane) {
-      plane = landed_plane;
+      planes.add(landed_plane);
       return true;
     }
 
     public boolean takeOff(String plane_taking_off) {
-      plane = "";
+      planes.remove(plane_taking_off);
       return true;
     }
 
-    public String getPlane() {
-      return plane;
+    public List<String> getPlane() {
+      return planes;
     }
 }
