@@ -21,4 +21,21 @@ public class AirportTests
       boolean actual = airport.takeOff("plane");
       assertEquals(expected, actual);
     }
+
+    @Test
+    public void landsPlaneAndStoresIt() {
+      airport.land("plane");
+      String actual = airport.getPlane();
+      assertEquals("plane", actual);
+
+    }
+
+    @Test
+    public void takesOffAndRemovesPlane()
+    {
+      airport.land("plane");
+      airport.takeOff("plane");
+      String actual = airport.getPlane();
+      assertEquals("", actual);
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.airport.app.AirportTests" time="0.053" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.airport.app.AirportTests" time="0.075" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="12"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/budros/Projects/JAVA/airport-app/target/surefire/surefirebooter11615632128802082275.jar /Users/budros/Projects/JAVA/airport-app/target/surefire 2019-07-14T17-08-31_273-jvmRun1 surefire15205798445940280372tmp surefire_015843987619067906959tmp"/>
+    <property name="sun.java.command" value="/Users/budros/Projects/JAVA/airport-app/target/surefire/surefirebooter8025739433672436300.jar /Users/budros/Projects/JAVA/airport-app/target/surefire 2019-07-14T17-35-28_766-jvmRun1 surefire12324348805223503869tmp surefire_012339964140493797806tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/budros/Projects/JAVA/airport-app/target/test-classes:/Users/budros/Projects/JAVA/airport-app/target/classes:/Users/budros/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/budros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/budros/Projects/JAVA/airport-app/target/surefire/surefirebooter11615632128802082275.jar"/>
+    <property name="surefire.real.class.path" value="/Users/budros/Projects/JAVA/airport-app/target/surefire/surefirebooter8025739433672436300.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="12.0.1+12"/>
@@ -56,5 +56,7 @@
     <property name="java.class.version" value="56.0"/>
   </properties>
   <testcase name="takesOffPlaneReturnsTrue" classname="com.airport.app.AirportTests" time="0.002"/>
-  <testcase name="landsPlaneAndReturnsTrue" classname="com.airport.app.AirportTests" time="0"/>
+  <testcase name="landsPlaneAndStoresIt" classname="com.airport.app.AirportTests" time="0"/>
+  <testcase name="landsPlaneAndReturnsTrue" classname="com.airport.app.AirportTests" time="0.001"/>
+  <testcase name="takesOffAndRemovesPlane" classname="com.airport.app.AirportTests" time="0"/>
 </testsuite>
